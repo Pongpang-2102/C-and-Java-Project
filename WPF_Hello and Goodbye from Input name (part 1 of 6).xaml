@@ -1,0 +1,29 @@
+<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_20_Oct_22_Academy02"
+        xmlns:System="clr-namespace:System;assembly=System.Runtime" x:Class="_20_Oct_22_Academy02.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="229" Width="422">
+    <Grid RenderTransformOrigin="0.5,0.5" Margin="0,0,-221,0" Height="303" VerticalAlignment="Top">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="-0.184"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Label Content="Name" Margin="10,20,0,0" Height="39" VerticalAlignment="Top" HorizontalAlignment="Left" Width="76"/>
+        <Label Content="Greeter" Margin="10,64,0,0" Height="39" VerticalAlignment="Top" HorizontalAlignment="Left" Width="76"/>
+        <ComboBox x:Name="cmbGreeter" Margin="106,66,0,0" Height="26" VerticalAlignment="Top" HorizontalAlignment="Left" Width="183">
+            <System:String>Formal</System:String>
+            <System:String>Friendly</System:String>
+        </ComboBox>
+        <TextBox x:Name="txtName" TextWrapping="Wrap" Margin="106,20,0,0" Height="26" VerticalAlignment="Top" HorizontalAlignment="Left" Width="183"/>
+        <Button x:Name="btn_greet" Content="Greet" Margin="120,109,378,152" Click="btn_greet_Click"/>
+
+    </Grid>
+</Window>
