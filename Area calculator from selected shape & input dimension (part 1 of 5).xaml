@@ -1,0 +1,24 @@
+<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_20_Oct_22_Academy01_Area_Calc"
+        xmlns:System="clr-namespace:System;assembly=System.Runtime" x:Class="_20_Oct_22_Academy01_Area_Calc.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Shape" Margin="10,10,0,0" RenderTransformOrigin="0.751,0.695" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Width="81"/>
+        <Label Content="Width" Margin="10,73,0,0" RenderTransformOrigin="0.751,0.695" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Width="81"/>
+        <Label Content="Height" Margin="10,128,0,0" RenderTransformOrigin="0.751,0.695" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Width="81"/>
+        <ComboBox x:Name="cmbShape" Margin="91,12,0,0" Height="33" VerticalAlignment="Top" HorizontalAlignment="Left" Width="213">
+            <System:String>Rectangle</System:String>
+            <System:String>Triangle</System:String>
+            <System:String>Elipse</System:String>
+        </ComboBox>
+        <TextBox x:Name="txtWidth" TextWrapping="Wrap" Width="208" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="96,73,0,0"/>
+        <TextBox x:Name="txtHeight" TextWrapping="Wrap" Margin="96,128,0,0" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Width="208"/>
+        <Button x:Name="btn_calculate" Content="Calculate !!!" Margin="91,190,0,0" Height="45" VerticalAlignment="Top" HorizontalAlignment="Left" Width="213" Click="btn_calculate_Click"/>
+
+    </Grid>
+</Window>
