@@ -1,0 +1,16 @@
+<Window x:Class="_18_Oct_22_Academy04_guess_Number.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_18_Oct_22_Academy04_guess_Number"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="Guess" Content="guess  #" Margin="21,10,0,0" RenderTransformOrigin="0.796,3.365" FontSize="22" Height="55" VerticalAlignment="Top" HorizontalAlignment="Left" Width="107"/>
+        <Label x:Name="lblGuess" Content="1" Margin="133,16,0,0" RenderTransformOrigin="0.796,3.365" FontSize="16" FontWeight="Bold" Height="33" VerticalAlignment="Top" HorizontalAlignment="Left" Width="53"/>
+        <TextBox x:Name="txtNumber" TextWrapping="Wrap" Width="120" Margin="21,49,0,0" HorizontalAlignment="Left" Height="33" VerticalAlignment="Top"/>
+        <Button x:Name="Guess_button" Content="Guess !" Margin="30,106,0,0" FontSize="18" Click="Guess_button_Click" Height="39" VerticalAlignment="Top" HorizontalAlignment="Left" Width="102" FontStyle="Italic"/>
+
+    </Grid>
+</Window>
