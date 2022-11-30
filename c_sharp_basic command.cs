@@ -13,14 +13,14 @@ namespace Academy01
             x--; // x will be deducted by 1
             a++; // a will be increased by 1
 
-            var result = x / a;  // var จะกำหนดชนิดตัวแปรให้เราโดยอัตโนมัติ
+            var result = x / a;          # var will be defined variable type automatically
 
 
-            /* Say Hello to User long comments Pongpang line 1
+            """ Say Hello to User long comments Pongpang line 1
                Say Hello to User long comments Pongpang line 2
                Say Hello to User long comments Pongpang line 3
                Say Hello to User long comments Pongpang line 4
-            */
+            """
 
             // พิมพ์ทักทายผู้ใช้    short comment
             /*Console.WriteLine("Hello Pongpang \n" +
