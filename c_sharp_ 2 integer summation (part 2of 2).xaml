@@ -1,0 +1,21 @@
+<Window x:Class="Academy04__WPF___calculator_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Academy04__WPF___calculator_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="153*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="X : " Margin="23,30,0,0" HorizontalAlignment="Left" Width="23" Height="28" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Y :" HorizontalAlignment="Left" Margin="23,79,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtX" TextWrapping="Wrap" Width="120" Margin="25,30,0,0" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="txtY" TextWrapping="Wrap" Width="120" Margin="25,77,0,0" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Grid.Column="1"/>
+        <Button x:Name="CalButton" Content="Calculate" Margin="0,120,636,0" Click="CalButton_Click" Height="24" VerticalAlignment="Top" Grid.Column="1" HorizontalAlignment="Right" Width="88"/>
+
+    </Grid>
+</Window>
