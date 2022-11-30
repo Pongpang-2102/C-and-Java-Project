@@ -1,0 +1,24 @@
+<Window x:Class="_18_Oct_22_Academy02.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_18_Oct_22_Academy02"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="text1" TextWrapping="Wrap" Width="120" Margin="21,24,0,0" Height="33" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <TextBox x:Name="text2" TextWrapping="Wrap" Width="120" Margin="21,75,0,0" Height="33" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <TextBox x:Name="text4" TextWrapping="Wrap" Width="120" Margin="21,184,0,0" Height="33" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <TextBox x:Name="text5" TextWrapping="Wrap" Margin="21,241,0,0" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120"/>
+        <TextBox x:Name="text3" TextWrapping="Wrap" Width="120" Margin="21,130,0,0" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <ComboBox x:Name="cmbOperation" Width="120" Margin="21,295,0,0" SelectionChanged="ComboBox_SelectionChanged" Height="32" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <ComboBoxItem Content="Summary"/>
+            <ComboBoxItem Content="Null"/>
+            <ComboBoxItem Content="Max" IsSelected="True"/>
+            <ComboBoxItem Content="Min"/>
+        </ComboBox>
+        <Button x:Name="calculate_button" Content="calculate" Margin="21,351,0,0" Height="41" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" Click="calculate_button_Click"/>
+
+    </Grid>
+</Window>
